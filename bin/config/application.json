@@ -1,0 +1,14 @@
+{
+	"web":{
+		"port": "127.0.0.1:9001",
+		"isDebug": true
+	},
+	"db":{
+		"jerry_test": {
+			"type": "mysql",
+			"dsn": "jerry_test:fdfef#ab_b17c49b27FaaABCaaaaaaaaaa@tcp(10.10.51.68:3306)/jerry_test?charset=utf8",
+			"maxOpenConnections": 1,
+			"maxIdleConnections": 1
+		}
+	}
+}

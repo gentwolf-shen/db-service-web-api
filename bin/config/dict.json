@@ -1,0 +1,9 @@
+{
+
+  "4000000": "invalid parameter",
+  "4000001": "invalid parameter",
+  "4010000": "auth failed",
+  "4001001": "SQL error",
+
+  "message": ""
+}
