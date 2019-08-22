@@ -58,13 +58,12 @@ func (this *AuthService) CheckToken(token string) string {
 	}
 
 	tmp = strings.Split(string(rawStr), "|")
-	if len(tmp) != 4 {
+	if len(tmp) != 3 {
 		return ""
 	}
 
-	span := timehelper.Timestamp() - convert.ToInt64(tmp[3])
-	if tmp[1] != appKey || tmp[2] != config.Database ||
-		span > 60 || span < -60 {
+	span := timehelper.Timestamp() - convert.ToInt64(tmp[2])
+	if tmp[1] != appKey || span > 60 || span < -60 {
 		return ""
 	}
 

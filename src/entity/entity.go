@@ -2,7 +2,7 @@ package entity
 
 type (
 	SqlItem struct {
-		Database string
+		Database string `json:"database"`
 		Sql      string `json:"sql" binding:"required"`
 	}
 

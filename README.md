@@ -49,10 +49,10 @@
     $dbName = '...'; // config/application.json中的dbName
  
     // 待加密的原始字符串
-    $msg = $nonce .'|'. $appKey .'|'. $dbName .'|'. time();
+    $msg = $nonce .'|'. $appKey .'|'. time();
     
-    $key = '***'; // 18位字符串,  config/auth.json中$appSecret的前18位
-    $iv = '***'; // 18位字符串,  config/auth.json中$appSecret的后18位
+    $key = '***'; // 16位字符串,  config/auth.json中$appSecret的前18位
+    $iv = '***'; // 16位字符串,  config/auth.json中$appSecret的后18位
         
     $cipher = 'AES-128-CBC';
     $ivlen = openssl_cipher_iv_length($cipher);
